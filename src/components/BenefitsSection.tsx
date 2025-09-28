@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, Target, TrendingUp, Zap, Users, Shield } from 'lucide-react';
 
 const benefits = [

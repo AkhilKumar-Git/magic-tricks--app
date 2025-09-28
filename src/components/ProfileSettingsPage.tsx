@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ArrowLeft, Save, User, Settings, Bell, Shield, Trash2, Zap, Eye, EyeOff, Check } from 'lucide-react';
 
 interface ProfileSettingsPageProps {
@@ -214,7 +214,7 @@ const ProfileSettingsPage: React.FC<ProfileSettingsPageProps> = ({ onBackToDashb
                     return (
                       <button
                         key={tab.id}
-                        onClick={() => setActiveTab(tab.id as any)}
+                        onClick={() => setActiveTab(tab.id as 'profile' | 'preferences' | 'account')}
                         className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-all duration-300 ${
                           activeTab === tab.id
                             ? 'bg-gradient-to-r from-electric-blue to-magenta text-white'

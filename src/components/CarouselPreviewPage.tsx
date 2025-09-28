@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Download, Zap, ChevronLeft, ChevronRight, Grid3x3 as Grid3X3, Palette, Type, Sparkles } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowLeft, Download, Zap, ChevronLeft, ChevronRight, Grid3x3 as Grid3X3, Sparkles } from 'lucide-react';
 
 interface CarouselPreviewPageProps {
   carouselId: string | null;

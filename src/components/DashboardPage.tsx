@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   Zap, 
   Copy, 
   Download, 
   Heart, 
   Search, 
-  Filter, 
   Plus, 
   ArrowLeft,
   Calendar,
