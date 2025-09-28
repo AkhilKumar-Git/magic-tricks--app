@@ -182,9 +182,12 @@ src/
 
 ### Netlify
 1. Connect repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-4. Add environment variables
+2. The `netlify.toml` file is already configured
+3. Add environment variables in Netlify dashboard:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+   - `VITE_CLAUDE_API_KEY`
+4. Deploy automatically on every push
 
 ### Manual Deployment
 ```bash
