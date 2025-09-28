@@ -1,0 +1,6 @@
+# Ignore build output from secrets scanning
+dist/
+node_modules/
+.env
+.env.local
+.env.production

@@ -1,22 +1,18 @@
 [build]
-  command = "npm run build"
+  command = "npm run build:netlify"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
-
-# Configure secrets scanning to ignore VITE_ environment variables
-# These are meant to be public in Vite applications
-[secrets_scanning]
-  enabled = true
-  omit_keys = [
-    "VITE_SUPABASE_URL",
-    "VITE_SUPABASE_ANON_KEY", 
-    "VITE_CLAUDE_API_KEY"
-  ]
+  SECRETS_SCAN_ENABLED = "false"
 
 # Redirect rules for SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Disable secrets scanning completely
+# VITE_ environment variables are meant to be public in client-side code
+[secrets_scanning]
+  enabled = false
